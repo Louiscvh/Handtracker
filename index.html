@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Handtracker - Louis Cavecchi</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/rzj3zdq.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/1647718797494.jpeg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/1647718797494.jpeg" alt="Logo" srcset="" />
+    </header>
+    <main>
+      <h1>Handtrack in JS</h1>
+      <div>
+        <button onclick="toggleVideo()" id="trackbutton" type="button">
+          Toggle Video
+        </button>
+        <aside>
+          <div></div>
+          <p id="updatenote">Loading model...</p>
+        </aside>
+      </div>
+      <video
+        class="videobox canvasbox"
+        autoplay="autoplay"
+        id="myvideo"
+      ></video>
+      <section id="cam">
+        <canvas id="canvas" class="border canvasbox"></canvas>
+      </section>
+    </main>
+    <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"></script>
+    <script src="src/index.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+html {
+  background-color: #f1f1f1;
+}
+
+html,
+button {
+  font-family: "Sofia Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  margin: 30px auto;
+}
+
+header img {
+  height: 64px;
+}
+
+main h1 {
+  font-size: 4rem;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main button {
+  border: none;
+  background-color: #e2e2e2;
+  padding: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+main button:hover {
+  background-color: #c1c1c1;
+}
+
+main aside {
+  background-color: #e2e2e2;
+  padding: 25px;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+main aside div {
+  height: 32px;
+  width: 32px;
+  background-color: red;
+}
+
+main aside p {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+}
+
+main #cam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #cam canvas {
+  width: 40%;
+}
+
+@media screen and (max-width: 1080px) {
+  main #cam canvas {
+    width: 100%;
+  }
+}
+
+video {
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */

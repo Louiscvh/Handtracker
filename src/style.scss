@@ -1,0 +1,80 @@
+html {
+  background-color: #f1f1f1;
+}
+
+html,
+button {
+  font-family: "Sofia Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  margin: 30px auto;
+}
+
+header {
+  img {
+    height: 64px;
+  }
+}
+
+main {
+  h1 {
+    font-size: 4rem;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button {
+    border: none;
+    background-color: #e2e2e2;
+    padding: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(193, 193, 193);
+    }
+  }
+
+  aside {
+    background-color: #e2e2e2;
+    padding: 25px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    div {
+      height: 32px;
+      width: 32px;
+      background-color: red;
+    }
+
+    p {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+  }
+
+  #cam {
+    display: flex;
+    justify-content: center;
+    canvas {
+      width: 40%;
+
+      @media screen and (max-width: 1080px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+video {
+  visibility: hidden;
+}
